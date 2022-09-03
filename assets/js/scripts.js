@@ -29,7 +29,7 @@ const fetchCharacter = async (character) => {
 };
 
 const renderCharacter = async (character) => {
-  characterName.innerHTML = "Loading...";
+  characterName.innerHTML = "Carregando...";
   const data = await fetchCharacter(character);
 
   if (data) {
