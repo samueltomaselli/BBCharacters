@@ -32,7 +32,7 @@ const renderCharacter = async (character) => {
   characterName.innerHTML = "Carregando...";
   const data = await fetchCharacter(character);
 
-  if (data) {
+  if (data.length !== 0) {
     characterName.innerHTML = data[0].name;
     characterImage.src = data[0].img;
     characterPortrayed.innerHTML = data[0].portrayed;
@@ -41,7 +41,11 @@ const renderCharacter = async (character) => {
     input.value = "";
     searchCharacter = data[0].char_id;
   } else {
-    characterName.innerHTML = "not found :c";
+    characterName.innerHTML = "Not found :c";
+    characterImage.src = "https://i.ytimg.com/vi/-YWU9A07FJQ/maxresdefault.jpg";
+    characterPortrayed.innerHTML = "?";
+    characterOccupation.innerHTML = "?";
+    characterStatus.innerHTML = "?";
     input.value = "";
   }
 };
