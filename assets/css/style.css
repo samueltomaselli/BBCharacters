@@ -3,7 +3,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(215, 212, 212);
+    background: rgb(59, 59, 59);
+    background: linear-gradient(332deg, rgba(59, 59, 59, 1) 0%, rgba(7, 201, 130, 1) 100%, rgba(255, 255, 255, 1) 100%);
 }
 
 .card {
