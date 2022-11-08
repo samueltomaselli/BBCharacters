@@ -64,6 +64,18 @@ main {
     margin-bottom: 20px;
 }
 
+.status-answ {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    height: auto;
+}
+
+.status-answ:hover {
+    cursor: pointer;
+    background-color: #07C982;
+}
+
 .right span {
     color: #fff;
 }
